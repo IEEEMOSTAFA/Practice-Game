@@ -4,7 +4,7 @@ function handleKeyboardKeyUpEvent(event) {
     console.log('player pressed', playPressed);
     // ----------stop the game if pressed 'ESC'
     if (event.key === 'Escape') {
-        gameOver()
+        gameOver();
     }
     // key player is expected to press
     const currentAlphabetElement = document.getElementById('current-alphabet');
@@ -70,7 +70,7 @@ function play() {
     continueGame();
 
     //  set and reset life
-    getTextElementValueById('current-life', 5);
-    getTextElementValueById('current-score', 0);
+    setTextElementValueById('current-life', 5);
+    setTextElementValueById('current-score', 0);
 
 }
